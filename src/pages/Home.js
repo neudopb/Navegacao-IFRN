@@ -7,7 +7,7 @@ export function Home() {
     return(
         <View style={MyStyles.containerHome}>
             <ImageBackground
-                source={{uri: 'https://portal.ifrn.edu.br/portal_css/tema2011/++resource++ifrn.tema2011.images/bg.jpg' }}
+                source={require('../imagens/imgifrn.png')}
                 resizeMode="cover"
                 style={MyStyles.imgBG}>
                 <Text></Text>
@@ -23,11 +23,12 @@ export function Home() {
                         CNPJ: 10.877.412/0006-72{'\n'}
                         Horário de atendimento: 9h às 12h e 14h às 18h (segunda a sexta-feira){'\n'}
                         E-mail: comunicacao.pf@ifrn.edu.br{'\n'}
-                        Telefone: (84) 4005 4109
+                        Telefone: (84) 4005-4109{'\n\n'}
+                        <Text>REDES SOCIAIS:</Text>
                     </Text>
                     <View style={MyStyles.redessociais}>
                         <AntDesign name="facebook-square" size={40} color="#3b5998" onPress={() => Linking.openURL('http://facebook.com/ifrnpaudosferros') } />
-                        <AntDesign name="instagram" size={40} color="#fff" onPress={() => Linking.openURL('https://www.instagram.com/ifrnpaudosferros') } />
+                        <AntDesign name="instagram" size={40} color="#000" onPress={() => Linking.openURL('https://www.instagram.com/ifrnpaudosferros') } />
                         <AntDesign name="twitter" size={40} color="#2aa9e0" onPress={() => Linking.openURL('http://twitter.com/ifrnpdf') } />
                         <AntDesign name="youtube" size={40} color="#c4302b" onPress={() => Linking.openURL('http://www.youtube.com/c/IFRNPDF') } />
                     </View>

@@ -10,9 +10,11 @@ export function Tecnico( {navigation} ) {
                 source={require('../imagens/imgifrn.png')}
                 resizeMode="cover"
                 style={MyStyles.imgCursos}>
-                <MyBtn titulo="Tec Alimentos" onPress={() => navigation.navigate('Tec Alimentos')} />
-                <MyBtn titulo="Tec Apicultura" onPress={() => navigation.navigate('Tec Apicultura')} />
-                <MyBtn titulo="Tec Informática" onPress={() => navigation.navigate('Tec Informatica')} />
+                <View style={MyStyles.viewBtn}>
+                    <MyBtn titulo="Tec Alimentos" onPress={() => navigation.navigate('Tec Alimentos')} />
+                    <MyBtn titulo="Tec Apicultura" onPress={() => navigation.navigate('Tec Apicultura')} />
+                    <MyBtn titulo="Tec Informática" onPress={() => navigation.navigate('Tec Informatica')} />
+                </View>
             </ImageBackground>
         </View>
     )

@@ -13,7 +13,12 @@ const MyStyles = StyleSheet.create({
         backgroundColor: '#2f9e41',
     },
     containerCurso: {
-        flex: 1
+        flex: 1,
+    },
+    viewBtn: {
+        backgroundColor: 'rgba(255,255,255,0.3)',
+        width: '100%',
+        alignItems: 'center'
     },
     imgCursos: {
         alignItems: 'center',
@@ -31,12 +36,13 @@ const MyStyles = StyleSheet.create({
         height: 120,
         fontWeight: 'bold',
         textAlign: 'center',
-        backgroundColor: '#97cea0c0',
+        backgroundColor: 'rgba(151,206,160,0.6)',
         alignItems: 'center',
         justifyContent: 'center'
     },
     descricao: {
-        justifyContent: 'flex-end'
+        justifyContent: 'flex-end',
+        backgroundColor: 'rgba(255,255,255,0.4)',
     }, 
     txtDesc: {
         color: '#000',

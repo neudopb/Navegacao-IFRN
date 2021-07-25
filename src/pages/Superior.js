@@ -10,8 +10,10 @@ export function Superior( {navigation} ) {
                 source={require('../imagens/imgifrn.png')}
                 resizeMode="cover"
                 style={MyStyles.imgCursos}>
-                <MyBtn titulo="Análise de Sistemas" onPress={() => navigation.navigate('Analise de Sistemas')} />
-                <MyBtn titulo="Química" onPress={() => navigation.navigate('Quimica')} />
+                <View style={MyStyles.viewBtn}>
+                    <MyBtn titulo="Análise de Sistemas" onPress={() => navigation.navigate('Analise de Sistemas')} />
+                    <MyBtn titulo="Química" onPress={() => navigation.navigate('Quimica')} />
+                </View>
             </ImageBackground>
         </View>
     )
